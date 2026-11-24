@@ -1,0 +1,15 @@
+create image
+----------------------------------------
+docker build -t app1 .
+
+create container
+-------------------------------------------
+docker run -d --name container1 -p 8085:80 app1
+
+Tagging an image
+----------------------------
+docker tag  123456 anilkumarbh/app1:1.1
+
+Push an image to docker hub
+-------------------------------------
+docker push docker.io/anilkumarbh/app1:1.1
